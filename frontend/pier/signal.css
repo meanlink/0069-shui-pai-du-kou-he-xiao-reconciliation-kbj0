@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Ma+Shan+Zheng&display=swap');
+:root{
+  --s-page:oklch(94% .024 102);--s-panel:oklch(98% .022 101);
+  --s-ink:oklch(25% .043 190);--s-muted:oklch(42% .049 190);--s-line:oklch(75% .057 172);
+  --s-accent:oklch(37% .083 168);--s-body:"Barlow Condensed","Noto Sans SC",sans-serif;
+  --s-display:"Noto Serif SC",serif;font-size:17px;
+}
+.masthead { border-top-width:12px; border-top-color:var(--s-ink); }
+.masthead-title strong { letter-spacing:.12em; }
+.pier-heading { display:grid; grid-template-columns:max-content minmax(0,1fr); column-gap:1rem; align-items:center; margin:1.7rem 0 1.5rem; padding:0 0 1rem; border-bottom:1px solid var(--s-line); }
+.pier-heading h1 { margin:0; }
+.pier-heading span { padding:.25rem .45rem; background:var(--s-ink); color:var(--s-panel); writing-mode:vertical-rl; grid-row:span 2; letter-spacing:.2em; }
+.pier-heading p { margin:.55rem 0 0; color:var(--s-muted); }
+.signin-heading { max-width:420px; }
+.signin-heading h1 { font-size:clamp(2rem,6vw,5rem); }
+.status-chip.count,.status-chip.first { color:oklch(37% .090 150);border-color:currentColor; }
+.status-chip.open,.status-chip.outside { color:oklch(47% .122 62);border-color:currentColor; }
+.status-chip.reject,.status-chip.ineligible { color:oklch(42% .14 24);border-color:currentColor; }
+.status-chip.repeat { color:var(--s-muted);border-style:dashed; }
